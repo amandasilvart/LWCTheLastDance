@@ -1,0 +1,36 @@
+<template>
+    <div class="container">
+      <div class="display">
+        <span class="output">{result}</span>
+      </div>
+      <div class="keys">
+        <div class="row">
+          <button value="7" onclick={handleClick}>7</button>
+          <button value="8" onclick={handleClick}>8</button>
+          <button value="9" onclick={handleClick}>9</button>
+          <button value="+" onclick={handleClick}>+</button>
+        </div>
+        <div class="row">
+          <button value="4" onclick={handleClick}>4</button>
+          <button value="5" onclick={handleClick}>5</button>
+          <button value="6" onclick={handleClick}>6</button>
+          <button value="-" onclick={handleClick}>-</button>
+        </div>
+        <div class="row">
+          <button value="1" onclick={handleClick}>1</button>
+          <button value="2" onclick={handleClick}>2</button>
+          <button value="3" onclick={handleClick}>3</button>
+          <button value="*" onclick={handleClick}>*</button>
+        </div>
+        <div class="row">
+          <button value="0" onclick={handleClick}>0</button>
+          <button value="." onclick={handleClick}>.</button>
+          <button value="C" onclick={clearDisplay}>C</button>
+          <button value="/" onclick={handleClick}>/</button>
+        </div>
+        <div class="row">
+          <button class="equal" onclick={evaluate}>=</button>
+        </div>
+      </div>
+    </div>
+  </template>

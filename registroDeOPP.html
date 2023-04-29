@@ -1,0 +1,33 @@
+<template>
+    <lightning-card>
+        <div class="titulo">
+            <h1>Ultimas Oportunidades</h1>  
+        </div>
+              
+           <template lwc:if={opportunities}>
+                <table>
+                    <thead >
+                        <tr >
+                            <th >ID</th>
+                            <th  >Nome</th>
+                            <th  >Valor</th>
+                            <th  >Fase</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        
+                        <template for:each={opportunities} for:item="opp" >
+                            <tr key={opportunities.id} >
+                                <th >{opp.Id}</th>
+                                <th >{opp.Name}</th>
+                                <th  >{opp.Amount}</th>
+                                <th  >{opp.StageName}</th>
+                            </tr>
+                        </template>
+                    
+                    </tbody>
+                </table>
+            </template>
+      
+    </lightning-card>
+</template>
